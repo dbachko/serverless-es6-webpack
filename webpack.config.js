@@ -6,10 +6,13 @@ module.exports = {
   target: 'node',
   externals: [nodeExternals()], // ignore all modules in node_modules folder
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader'
+      }
     }]
-  }
+  },
+  plugins: []
 };

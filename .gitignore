@@ -8,3 +8,4 @@ node_modules
 
 # Serverless staff
 .serverless
+.webpack

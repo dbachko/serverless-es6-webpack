@@ -23,16 +23,14 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.5.2",
-    "eslint": "^3.19.0",
+    "eslint": "^4.1.1",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-react": "^7.1.0",
-    "serverless-webpack": "^1.0.0-rc.4",
-    "webpack": "^2.6.1",
+    "serverless-webpack": "git+https://github.com/elastic-coders/serverless-webpack.git#fa6379507442bd2ac4d6455a7ab14f57efdd41ff",
+    "webpack": "^3.0.0",
     "webpack-node-externals": "^1.6.0"
   }
 }
