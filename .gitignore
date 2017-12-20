@@ -9,3 +9,9 @@ node_modules
 # Serverless staff
 .serverless
 .webpack
+
+# OSX
+.DS_Store
+
+# ENV var
+.env
