@@ -11,17 +11,14 @@
 #
 # Happy Coding!
 
-service: serverless-es6-webpack-test # NOTE: update this with your service name
+service: serverless-es6-webpack-ttt # NOTE: update this with your service name
 
 plugins:
-  # - serverless-dotenv-plugin
   - serverless-webpack
 
 custom:
   webpack: ./webpack.config.js
-  # webpackIncludeModules: true # enable auto-packing of external modules
-  # dotenv:
-  #   path: .env
+  webpackIncludeModules: true # enable auto-packing of external modules
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -68,7 +65,7 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/handler.hello
     events:
       - http:
           path: hello

@@ -1,33 +1,20 @@
-const dotenv = require('dotenv');
-// const nodeExternals = require('webpack-node-externals');
-// const webpack = require('webpack');
-
-dotenv.config({ path: `${__dirname}/.env` });
+const nodeExternals = require('webpack-node-externals');
+const slsw = require('serverless-webpack');
 
 module.exports = {
-  entry: ['./handler.js'],
+  entry: slsw.lib.entries,
   target: 'node',
-  // externals: [nodeExternals()], // ignore all modules in node_modules folder
-  externals: ['.env'],
-  resolve: {
-    extensions: ['.js']
-  },
+  externals: [nodeExternals()],
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        include: __dirname,
         use: {
-          loader: 'babel-loader'
-        }
-      }
-    ]
+          loader: 'babel-loader',
+        },
+      },
+    ],
   },
-  plugins: [
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     TEST: JSON.stringify(process.env.TEST),
-    //   },
-    // }),
-  ]
 };
