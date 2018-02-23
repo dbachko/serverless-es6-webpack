@@ -3,11 +3,11 @@
     [
       "env",
       {
+        "modules": "commonjs",
         "targets": {
           "node": "6.10"
         }
       }
     ]
-  ],
-  "plugins": ["transform-object-rest-spread"]
+  ]
 }

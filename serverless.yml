@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: serverless-es6-webpack-ttt # NOTE: update this with your service name
+service: serverless-es6-webpack # NOTE: update this with your service name
 
 plugins:
   - serverless-webpack

@@ -1,8 +1,19 @@
 # Serverless ES6 Webpack
 
-## How to install
+Simple Serverless ES6 Webpack boilerplate
 
-1. Run `serverless install --url https://github.com/dbachko/serverless-es6-webpack` to install the service in your current working directory
-2. Switch to the directory `cd serverless-es6-webpack`
-3. Run `npm install`
-4. Deploy with `serverless deploy`
+## Quick start
+
+1. Install and setup [Serverless Framework](https://github.com/serverless/serverless#quick-start)
+
+1. Run `serverless install --url https://github.com/dbachko/serverless-es6-webpack`
+
+1. Switch directory `cd serverless-es6-webpack`
+
+1. Install node dependencies `npm install`
+
+1. Deploy with `serverless deploy`
+
+## License
+
+[MIT](LICENSE.md)
