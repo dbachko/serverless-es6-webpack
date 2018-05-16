@@ -1,5 +1,5 @@
 export const hello = (event, context, callback) => {
-  const message = 'Go Serverless v1.0! Your function executed successfully!';
+  const message = 'Go Serverless! Your function executed successfully!';
   const response = {
     statusCode: 200,
     body: JSON.stringify({
