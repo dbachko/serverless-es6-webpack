@@ -17,17 +17,13 @@ module.exports = {
   devtool: 'nosources-source-map',
   externals: [nodeExternals()],
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader'
-          }
-        ]
-      }
-    ]
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: [{
+        loader: 'babel-loader'
+      }]
+    }]
   },
   output: {
     libraryTarget: 'commonjs2',
