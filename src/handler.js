@@ -9,9 +9,6 @@ export const hello = (event, context, callback) => {
   };
 
   callback(null, response);
-
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // callback(null, { message, event });
 };
 
 export default {
