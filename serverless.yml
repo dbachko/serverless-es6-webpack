@@ -30,7 +30,7 @@ provider:
   name: aws
   runtime: nodejs8.10
   memorySize: 128
-  timeout: 60 # The default is 6
+  timeout: 30 # The default is 6
 
 # you can overwrite defaults here
 #  stage: dev
