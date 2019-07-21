@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: serverless-es6-webpack-test # NOTE: update this with your service name
+service: serverless-es6-webpack # NOTE: update this with your service name
 
 plugins:
   - serverless-webpack
@@ -28,7 +28,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
   memorySize: 128
   timeout: 30 # The default is 6
 
@@ -72,7 +72,6 @@ functions:
       - http:
           path: hello
           method: get
-
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details

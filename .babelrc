@@ -1,11 +1,11 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
         "modules": "commonjs",
         "targets": {
-          "node": "8.10"
+          "node": "10.15"
         }
       }
     ]
