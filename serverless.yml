@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: serverless-es6-webpack # NOTE: update this with your service name
+service: serverless-es6-webpack-test # NOTE: update this with your service name
 
 plugins:
   - serverless-webpack
@@ -28,7 +28,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
   memorySize: 128
   timeout: 30 # The default is 6
 
